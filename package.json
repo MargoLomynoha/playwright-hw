@@ -1,0 +1,22 @@
+{
+  "name": "playwright-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargoLomynoha/playwright-hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargoLomynoha/playwright-hw/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/MargoLomynoha/playwright-hw#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
