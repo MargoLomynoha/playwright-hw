@@ -37,5 +37,8 @@ export default defineConfig([
             '**/*.pw.{js,mjs,cjs}',
         ],
         extends: [playwright.configs['flat/recommended']],
+        rules: {
+            'playwright/expect-expect': 'off',
+        },
     },
 ]);
