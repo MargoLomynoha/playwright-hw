@@ -20,6 +20,7 @@
     "type": "module",
     "homepage": "https://github.com/MargoLomynoha/playwright-hw#readme",
     "devDependencies": {
+        "@faker-js/faker": "^10.2.0",
         "@playwright/test": "^1.57.0",
         "@types/node": "^25.0.3",
         "eslint": "^9.39.2",
