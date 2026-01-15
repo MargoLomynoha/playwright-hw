@@ -123,7 +123,7 @@ test.describe('Required input validation', () => {
 
         await regPage.typeTextIntoInput(
             regPage.userLastNameInput,
-            'ItIsaLongUserLastName'
+            'ItIsaLongUserLastNameAndExtraText'
         );
 
         await regPage.setInputBlurred(regPage.userLastNameInput);
@@ -215,7 +215,7 @@ test.describe('Required input validation', () => {
         // typing the password without a number
         await regPage.typeTextIntoInput(
             regPage.userPasswordInput,
-            'MargoPassword'
+            'MargoPasswordMargo'
         );
         await regPage.setInputBlurred(regPage.userPasswordInput);
         await regPage.inputFeedbackHasMessage(
