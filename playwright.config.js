@@ -10,19 +10,18 @@ import dotenv from 'dotenv';
 // import path from 'path';
 // dotenv.config({ path: '.env' });
 
-
 const ENV = process.env.ENV ?? 'local';
-dotenv.config({path: `.env.${ENV}`});
+dotenv.config({ path: `.env.${ENV}` });
 
-/** 
-* @param {string} name
-* @returns {string}
-*/
+/**
+ * @param {string} name
+ * @returns {string}
+ */
 
 function requiredEnv(name) {
     const value = process.env[name];
     if (!value) {
-        throw new Error(`Missing env var: ${name}. Check your .env file.`)
+        throw new Error(`Missing env var: ${name}. Check your .env file.`);
     }
     return value;
 }
@@ -45,7 +44,7 @@ export default defineConfig({
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
         /* Base URL to use in actions like `await page.goto('')`. */
-            baseURL: requiredEnv('BASE_URL'),
+        baseURL: requiredEnv('BASE_URL'),
         httpCredentials: {
             username: requiredEnv('HTTP_USER_NAME'),
             password: requiredEnv('HTTP_PASSWORD'),

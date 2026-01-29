@@ -6,7 +6,8 @@
     "scripts": {
         "format:fix": "npx prettier . --write",
         "format:check": "npx prettier . --check",
-        "lint": "npx eslint ."
+        "lint": "npx eslint .",
+        "test": "npx playwright test --ui"
     },
     "repository": {
         "type": "git",
