@@ -33,4 +33,22 @@ export class LoginPage extends BasePage {
     async shouldOpenGaragePage() {
         await this.urlShouldContain('panel/garage');
     }
+
+    get profileNavButton() {
+        return this.getElement(
+            '[class="btn btn-white btn-sidebar sidebar_btn -profile"]'
+        );
+    }
+
+    async clickOnNavButon(item) {
+        await item.click();
+    }
+
+    get userName() {
+        return this.getElement('[class="profile_name display-4"]');
+    }
+
+    async checkUserName(name) {
+        await expect(name).toHaveText('Ivan Ivanov');
+    }
 }
