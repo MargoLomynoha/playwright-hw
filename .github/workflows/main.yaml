@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    container: mcr.microsoft.com/playwright:v1.45.2-jammy
+    container: mcr.microsoft.com/playwright:v1.57.0-jammy
 
     steps:
       - name: Checkout
